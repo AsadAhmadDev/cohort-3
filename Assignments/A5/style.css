@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main,
+body {
+  height: 100%;
+  width: 90vw;
+  /* background: #292828; */
+  margin: auto;
+}
+navbar {
+  height: 15vh;
+  width: 100%;
+  border-bottom: 1px solid rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+navbar .navleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  gap: 20px;
+}
+navbar .navleft img {
+  height: 2.4rem;
+}
+navbar .navleft button {
+  /* height: 2rem; */
+  border-radius: 20px;
+  padding: 10px 15px;
+  background: #f7f5f5;
+  border: none;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+navbar .navright button {
+  /* height: 2rem; */
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #f3f3f3;
+  border: 1px solid #1f1f1f;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+navbar .navright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  gap: 40px;
+}
+navbar .navright li {
+  list-style: none;
+}
+navbar .navright li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: #000;
+}
+.hero {
+  height: 85vh;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero h1 {
+  font-size: 7rem;
+  line-height: 6rem;
+  font-weight: 100;
+}
+.hero h2 {
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  font-weight: 100;
+  padding: 40px 0;
+}
+.hero button {
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #202020;
+  border: 1px solid #1f1f1f;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.hero2 .scroll img {
+  height: 5rem;
+  margin: 2rem 4rem;
+  vertical-align: middle;
+}
+.hero2 .boxes {
+  display: flex;
+  gap: 40px;
+}
+.hero2 .boxes .box {
+  height: 30rem;
+  width: 25%;
+  background: #f1f1f1;
+  /* border: 2px solid red; */
+  padding: 50px;
+}
+.hero2 .boxes .box h1 {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+.hero2 .boxes .box h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 25px;
+  font-weight: 100;
+}
+.hero2 .boxes .box a {
+  color: #000;
+}
+.ourwork {
+  height: 5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 30px;
+  border-bottom: 1px solid #fff;
+}
+.ourwork a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1rem;
+  color: #000;
+}
+.hero3 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10rem;
+  /* border: 2px solid red; */
+}
+.hero3 header h1 {
+  font-size: 5rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.hero3 header button {
+ border-radius: 30px;
+  padding: 15px 20px;
+  background: #f3f3f3;
+  border: 1px solid #1f1f1f;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.hero3 .workcard {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  /* border: 2px solid rgb(0, 4, 255); */
+}
+.hero3 .workcard .card {
+  /* height: 75vh; */
+  width: 100%;
+  /* border: 2px solid red; */
+  gap: 40px;
+  overflow: hidden;
+}
+.hero3 .workcard .card .img {
+  overflow: hidden;
+}
+.hero3 .workcard .card img {
+  /* height: 65vh; */
+  width: 100%;
+  /* border: 2px solid red; */
+  transition:
+    ease-in-out,
+    transform 0.8s ease;
+}
+.hero3 .workcard .card img:hover {
+  transform: scale(1.1);
+}
+.hero3 .workcard .bottom {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero3 .workcard .bottom h1 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.hero3 .bottom button {
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #f3f3f3;
+  border: 1px solid #1f1f1f;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.featureCard .cardUppr {
+  width: 75%;
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 50px;
+  padding: 50px 0;
+}
+.featureCard .cardLower {
+  width: 75%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  gap: 50px;
+  margin: 30px 25%;
+}
+.featureCard .cardUppr .card,
+.featureCard .cardLower .card {
+  height: 30rem;
+  width: 33.3%;
+  /* border: 2px solid red; */
+  padding: 40px;
+  background: #e7e7e7;
+}
+.featureCard .cardUppr .card h2,
+.featureCard .cardLower .card h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+.featureCard .cardUppr .card h1,
+.featureCard .cardLower .card h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  padding-bottom: 80px;
+}
+.featureCard .cardUppr .card button,
+.featureCard .cardLower .card button {
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #1b1b1b;
+  border: 1px solid #1f1f1f;
+  font-size: 0.8rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.desc {
+  height: 100vh;
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.desc h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  padding-bottom: 80px;
+}
+.desc .text h2 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  padding-bottom: 80px;
+}
+.desc .text {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 40px;
+}
+.team header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10rem;
+  /* border: 2px solid red; */
+}
+.team header h1 {
+  font-size: 5rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.team header button {
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #f3f3f3;
+  border: 1px solid #1f1f1f;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.team .cards {
+  display: flex;
+  gap: 40px;
+}
+.team .cards .cardDesc {
+  height: 40rem;
+  width: 25%;
+  /* border: 2px solid red; */
+  padding: 50px;
+  background: #d6d5d5;
+}
+.team .cards .cardDesc h1 {
+  font-size: 1rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.team .cards .cardDesc h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+.team .cards .cardDesc h3 {
+  font-size: 1rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  padding-bottom: 60px;
+}
+.team .cards .cardDesc button {
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #000000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.team .cards .card {
+  height: 40rem;
+  width: 25%;
+  /* border: 2px solid red; */
+  /* padding: 50px; */
+  background: #d6d5d5;
+  overflow: hidden;
+  position: relative;
+}
+.team .cards .card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.socialtag {
+  position: absolute;
+  right: -10%;
+  bottom: 20%;
+  transform: translate(-50%, 120%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 999px;
+  opacity: 0;
+  transition: all 0.35s ease;
+  z-index: 2;
+}
+.socialtag ion-icon {
+  color: #fff;
+  background: rgb(0, 0, 0);
+  padding: 10px 10px;
+
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 100%;
+}
+/* learn something new (:has) */
+
+.team .cards .card:has(> img:hover) .socialtag {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+.team .cards .card .bottom {
+  height: 15%;
+  /* border: 2px solid red; */
+  position: absolute;
+  bottom: 0%;
+  background: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team .cards .card .bottom .name {
+  font-size: 1.5rem;
+}
+.team .cards .card .bottom button {
+  font-size: 1.5rem;
+  background: #faf9f9;
+  border: 1px solid #030303;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+.aboutUs {
+  height: 100vh;
+  /* border: 2px solid red; */
+  width: 70%;
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutUs .uppr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  /* border: 2px solid rgb(0, 255, 76); */
+  height: 50%;
+  width: 100%;
+}
+.aboutUs .lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  /* border: 2px solid rgb(0, 89, 255); */
+  height: 50%;
+  width: 100%;
+}
+.aboutUs .uppr img,
+.aboutUs .lower img {
+  height: 2.5rem;
+  align-self: flex-start;
+  margin: 50px 0;
+}
+.aboutUs .uppr .desc,
+.aboutUs .lower .desc {
+  width: 70%;
+  height: 100%;
+  /* border: 2px solid red; */
+  gap: 30px;
+}
+.aboutUs .uppr .desc h1,
+.aboutUs .lower .desc h1 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+.aboutUs .uppr .desc p .aboutUs .lower .desc p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.contact {
+  height: 80vh;
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+.contact h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+.contact button {
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #f3f3f3;
+  border: 1px solid #1f1f1f;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.last .insight header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10rem;
+  /* border: 2px solid red; */
+}
+.last .insight header h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.last .insight header button {
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #f3f3f3;
+  border: 1px solid #1f1f1f;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.last .insight .cards {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 40px;
+}
+.last .insight .cards .card {
+  /* display: flex;
+  flex-direction: column; */
+  width: 25%;
+  height: 50vh;
+  /* border: 2px solid red; */
+  position: relative;
+  overflow: hidden;
+}
+.last .insight .cards .card img {
+  /* height: 100%; */
+  width: 100%;
+  transition: transform 0.8s ease;
+}
+.last .insight .cards .card img:hover {
+  transform: scale(1.1);
+}
+.last .insight .cards .card .bottom {
+  position: absolute;
+  bottom: 0;
+  background: #fdfdfd;
+  height: 5rem;
+  width: 100%;
+  /* border: 2px solid #000; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.last .insight .cards .card .bottom .name {
+  font-size: 1.5rem;
+}
+.last .insight .cards .card .bottom button {
+  font-size: 1.2rem;
+  background: #00000000;
+  /* border: 1px solid #030303; */
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+.footer {
+  /* border: 2px solid red; */
+  height: 70vh;
+  width: 100%;
+  margin-top: 2rem;
+}
+.footer .footerUppr .box {
+  height: 60vh;
+  width: 25%;
+  /* border: 2px solid red; */
+}
+.footer .footerUppr{
+  display: flex;
+  height: 90%;
+    /* border: 2px solid red; */
+
+}
+.footer .footerUppr .box .logo img {
+  height: 2rem;
+}
+.footer .footerUppr .box .social {
+  padding-top: 40px;
+}
+.footer .footerUppr .box .social ion-icon {
+  background: #e1eeff;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+.footer .footerUppr .box h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2rem;
+
+}
+.footer .footerUppr .box nav {
+  padding: 2rem 0;
+}
+.footer .footerUppr .box nav li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 100;
+  padding-top: 1rem;
+  text-transform: capitalize;
+}
+.footer .footerUppr .box button{
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #000000;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.footer .footerLower{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+  border-top: 1px solid rgb(49, 49, 49);
+}
