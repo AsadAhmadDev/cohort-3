@@ -93,7 +93,32 @@ navbar .navright li a {
   color: #fff;
   text-transform: capitalize;
 }
-.hero2 .scroll img {
+.hero2 .scroll {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 15vh;
+}
+.hero2 .scroll .track {
+  display: flex;
+  width: max-content;
+  animation: scroller 6s linear infinite;
+}
+.hero2 .scroll .imgs {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+@keyframes scroller {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.hero2 .scroll .imgs img {
   height: 5rem;
   margin: 2rem 4rem;
   vertical-align: middle;
