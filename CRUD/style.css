@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+main {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.nav {
+  height: 10vh;
+  width: 100%;
+  background: #1b392a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.nav .left {
+  border: 2px solid rgb(195, 17, 135);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.nav .right button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: #eef0ed;
+  border: 2px solid rgb(195, 17, 135);
+  border-radius: 10px;
+}
+.products {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  padding: 20px 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.products .productCards {
+  border: 2px solid rgb(216, 216, 216);
+  height: 70%;
+  width: 20%;
+  border-radius: 10px;
+  /* padding: 20px 40px; */
+}
+.products .productCards .image {
+  width: 100%;
+  height: 70%;
+  /* border: 2px solid rgb(9, 255, 0); */
+}
+.products .productCards .image img {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid rgb(0, 21, 255); */
+  object-fit: cover;
+  border-radius: 10px;
+}
+.products .productCards .bottom {
+  padding: 10px 20px;
+}
+.products .productCards .bottom .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.products .productCards .bottom .btns button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid rgb(206, 204, 204);
+  background: #000;
+  border-radius: 10px;
+}
+.overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  background: #000000bf;
+}
+.closeDiv {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  justify-content: space-between;
+}
+#close{
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: #ff0000;
+    border: 2px solid rgb(219, 217, 217);
+    border-radius: 100%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.overlay form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  height: 30vh;
+  width: 30vw;
+  background: #000;
+  border: 1px solid rgb(184, 154, 154);
+  border-radius: 10px;
+}
+.overlay form h1 {
+  font-size: 2.2rem;
+}
+.overlay form input {
+  height: 30px;
+  padding: 0 10px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #94b4a4;
+}
+.overlay form button {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid #94b4a4;
+}
